@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="Css/reset.css">
+  <link rel="stylesheet" href="Css/animeUp.css">
+  <link rel="sortcut icon" href="img/Logo.png" type="image/png" />
+  <title>Anime Up</title>
+</head>
+
+<body id="body">
+  <header class="container-fluid">
+    <nav class="navbar  navbar-expand-md">
+      <a class="navbar-brand" href="AnimeUP.html">
+        <img src="Img/Logo.png" height="80px">
+      </a>
+      <Button class="navbar-toggler " type="button" data-toggle='collapse' data-target='#navyAnime'
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><img height="10px" src="Img/pontos.png "></span>
+      </Button>
+      <div class="collapse navbar-collapse  " id="navyAnime">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link" href="AnimeUP.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">lançamentos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Populares</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Filmes</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Animes</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 ml-auto ">
+          <input class=" form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+          <button class="btn btn-secondary mr-sm-2 mt-sm-0 " type="submit"> <img src="Img/search.png"
+              height="15px"></button>
+        </form>
+        <div class="user">
+          <img src="Img/User1.png" height="60px">
+          <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal"
+            data-target="#animeModalL">Login</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal"
+            data-target="#animeModalC">cadastro</button>
+        </div>
+        <div class="modal fade" id="animeModalL" tabindex="-1" role="dialog" aria-labelledby="ModCenter"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-center" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModCenter">Login</h5>
+                <button type="button" class="close" data-dismiss='modal' aria-label='Fechar'>
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label> Endereço de email</label>
+                    <input class="form-control" placeholder="Seu email" type="email">
+                  </div>
+                  <div class="form-group">
+                    <label> Senha</label>
+                    <input class="form-control" placeholder="Sua senha" type="password">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Confirmar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="animeModalC" tabindex="-1" role="dialog" aria-labelledby="ModCenter"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-center" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModCenter">Cadastro</h5>
+                <button type="button" class="close" data-dismiss='modal' aria-label='Fechar'>
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label> Nome</label>
+                    <input class="form-control" placeholder="Seu Nome" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label> Endereço de email</label>
+                    <input class="form-control" placeholder="Seu email" type="email">
+                  </div>
+                  <div class="form-group">
+                    <label> Senha</label>
+                    <input class="form-control" placeholder="Sua senha" type="password">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Confirmar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+
+  <br>
+  <div id="anime" class="container">
+
+    <div id="shingeki" class="col-sm-8 container">
+        <h1 id="h1">Shingeki no Kyojin</h1>
+        <div id="descricao" class="text-center">
+            <img src="Img/Animes/6.jpg">
+            <h1 id="h1">Sinopse</h1>
+            <p id="p" class="">
+                Há várias décadas atrás, a humanidade foi quase exterminada pelo súbito aparecimento de seres humanoides, conhecido como Titãs. Criaturas de tamanho enorme e de inteligência aparentemente baixa, que comiam humanos por prazer. No entanto, um pequeno grupo de seres humanos sobreviveu no interior de uma cidade protegida por paredes superiores a três vezes a altura dos maiores Titãs. Durante 107 anos, a cidade fortificada foi testemunha de ataques dos Titãs sem sucesso, até que um dia, tudo mudou...</p>
+        </div>
+    </div>
+
+    <div id="temporadas" class="col-sm-8 container">
+            <div id="temp" class="card card-body" data-toggle="collapse" href="#ep-temp1" aria-expanded="true">
+            <h1 id="h1">1º temporada</h1>
+            </div>
+            
+            <div id="ep-temp1" class="temps collapse">
+
+                <div id="ep" class="media">
+                    <img class="mr-3" src="Img/Episodios/Shingeki/ep1.jpg">
+                    <div class="media-body">
+                        <h5 id="h5">Episódio 1</h5>
+                        <p id="p">Para você a 2 mil anos no futuro - A queda de Shiganshina(1)</p>
+                    </div>
+                </div>  
+
+                <div id="ep" class="media">
+                    <img class="mr-3" src="Img/Episodios/Shingeki/ep2.jpg">
+                    <div class="media-body">
+                        <h5 id="h5">Episódio 2</h5>
+                        <p id="p">Naquele Dia - A queda de Shiganshina(2)</p>
+                    </div>
+                </div>  
+
+                <div id="ep" class="media">
+                    <img class="mr-3" src="Img/Episodios/Shingeki/ep3.jpg">
+                    <div class="media-body">
+                        <h5 id="h5">Episódio 3</h5>
+                        <p id="p">Uma luz fraca em meio ao desespero - A humanidade volta a se erguer(1)</p>
+                    </div>
+                </div>  
+
+                <div id="ep" class="media">
+                    <img class="mr-3" src="Img/Episodios/Shingeki/ep4.jpg">
+                    <div class="media-body">
+                        <h5 id="h5">Episódio 4</h5>
+                        <p id="p">A noite de formatura - A humanidade volta a se erguer(2)</p>
+                    </div>
+                </div>  
+
+                <div id="ep" class="media">
+                    <img class="mr-3" src="Img/Episodios/Shingeki/ep5.jpg">
+                    <div class="media-body">
+                        <h5 id="h5">Episódio 5</h5>
+                        <p id="p">A primeira batalha - A batalha de Trost(1)</p>
+                    </div>
+                </div>  
+                
+
+                <div id="ep" class="media">
+                    <img class="mr-3" src="Img/Episodios/Shingeki/ep6.jpg">
+                    <div class="media-body">
+                        <h5 id="h5">Episódio 6</h5>
+                        <p id="p">O mundo que a menina viu - A batalha de Trost(1)</p>
+                    </div>
+                </div>  
+
+                <div id="ep" class="media">
+                    <img class="mr-3" src="Img/Episodios/Shingeki/ep7.jpg">
+                    <div class="media-body">
+                        <h5 id="h5">Episódio 7</h5>
+                        <p id="p">A pequena lâmina - A batalha de Trost(1)</p>
+                    </div>
+                </div>  
+
+            </div>
+
+            <div id="temp" class="card card-body" data-toggle="collapse" href=#ep-temp2 aria-expanded="true">
+                <h1 id="h1">2º Temporada</h1>
+            </div>
+
+            <div id="ep-temp2" class="temps collapse">
+                    
+                    <div id="ep" class="media">
+                        <img class="mr-3" src="Img/Episodios/Shingeki/ep8.jpg">
+                        <div class="media-body">
+                            <h5 id="h5">Episódio 1</h5>
+                            <p id="p">Ouvindo a batida do coração - Batalha de Trost(4)</p>
+                        </div>
+                    </div> 
+
+                    <div id="ep" class="media">
+                        <img class="mr-3" src="Img/Episodios/Shingeki/ep9.jpg">
+                        <div class="media-body">
+                            <h5 id="h5">Episódio 2</h5>
+                            <p id="p">Paradeiro do seu braço esquerdo - Batalha de Trost(5)</p>
+                        </div>
+                    </div>
+                    
+                    <div id="ep" class="media">
+                        <img class="mr-3" src="Img/Episodios/Shingeki/ep10.jpg">
+                        <div class="media-body">
+                            <h5 id="h5">Episódio 3</h5>
+                            <p id="p">Resposta - Batalha de Trost(6)</p>
+                        </div>
+                    </div> 
+
+                    <div id="ep" class="media">
+                        <img class="mr-3" src="Img/Episodios/Shingeki/ep11.jpg">
+                        <div class="media-body">
+                            <h5 id="h5">Episódio 4</h5>
+                            <p id="p">Ícone - Batalha de Trost(7)</p>
+                        </div>
+                    </div> 
+
+                    <div id="ep" class="media">
+                        <img class="mr-3" src="Img/Episodios/Shingeki/ep12.jpg">
+                        <div class="media-body">
+                            <h5 id="h5">Episódio 5</h5>
+                            <p id="p">Ferida - Batalha de Trost(8)</p>
+                        </div>
+                    </div> 
+                    
+                    <div id="ep" class="media">
+                        <img class="mr-3" src="Img/Episodios/Shingeki/ep13.jpg">
+                        <div class="media-body">
+                            <h5 id="h5">Episódio 6</h5>
+                            <p id="p">Desejo Primário - Batalha de Trost(9)</p>
+                        </div>
+                    </div> 
+
+                    <div id="ep" class="media">
+                        <img class="mr-3" src="Img/Episodios/Shingeki/ep14.jpg">
+                        <div class="media-body">
+                            <h5 id="h5">Episódio 7</h5>
+                            <p id="p">Ainda não posso olhar em seus olhos - Véspera do contra-ataque(1)</p>
+                        </div>
+                    </div> 
+
+                </div>
+
+            <div id="temp" class="card card-body" data-toggle="collapse" href=#ep-temp3 aria-expanded="true">
+                <h1 id="h1">3º Temporada</h1>
+                
+            </div>
+
+            <div id="ep-temp3" class="temps collapse">
+                    
+                    <div id="ep" class="media">
+                        <img class="mr-3" src="Img/Episodios/Shingeki/ep15.jpg">
+                        <div class="media-body">
+                            <h5 id="h5">Episódio 1</h5>
+                            <p id="p">Esquadrão de Operações Especiais - A véspera do contra-ataque(2)</p>
+                        </div>
+                    </div> 
+                    
+                    <div id="ep" class="media">
+                        <img class="mr-3" src="Img/Episodios/Shingeki/ep16.jpg">
+                        <div class="media-body">
+                            <h5 id="h5">Episódio 2</h5>
+                            <p id="p">O que precisa ser feito - A véspera do contra-ataque(3)</p>
+                        </div>
+                    </div> 
+
+                    <div id="ep" class="media">
+                        <img class="mr-3" src="Img/Episodios/Shingeki/ep17.jpg">
+                        <div class="media-body">
+                            <h5 id="h5">Episódio 3</h5>
+                            <p id="p">A titã fêmea - 57ª Expedição além das muralhas(1)</p>
+                        </div>
+                    </div> 
+
+                    <div id="ep" class="media">
+                        <img class="mr-3" src="Img/Episodios/Shingeki/ep18.jpg">
+                        <div class="media-body">
+                            <h5 id="h5">Episódio 4</h5>
+                            <p id="p">A floresta das árvores gigantes - 57ª Expedição além das muralhas(2)</p>
+                        </div>
+                    </div> 
+
+                    <div id="ep" class="media">
+                        <img class="mr-3" src="Img/Episodios/Shingeki/ep19.jpg">
+                        <div class="media-body">
+                            <h5 id="h5">Episódio 5</h5>
+                            <p id="p">Morida - 57ª Expedição além das muralhas(3)</p>
+                        </div>
+                    </div> 
+
+                    <div id="ep" class="media">
+                        <img class="mr-3" src="Img/Episodios/Shingeki/ep20.jpg">
+                        <div class="media-body">
+                            <h5 id="h5">Episódio 6</h5>
+                            <p id="p">Erwin Smith - 57ª Expedição além das muralhas(4)</p>
+                        </div>
+                    </div> 
+
+                    <div id="ep" class="media">
+                        <img class="mr-3" src="Img/Episodios/Shingeki/ep21.jpg">
+                        <div class="media-body">
+                            <h5 id="h5">Episódio 7</h5>
+                            <p id="p">Golpe esmagador - 57ª Expedição além das muralhas(5)</p>
+                        </div>
+                    </div> 
+
+                </div>
+
+    </div>
+
+    <br>
+    
+  </div>
+
+  <div id="relacionados" class="container">
+      <h1 id="h1">Relacionados</h1>
+      <div id="flex-inner">
+
+          <div class="anime text-center">
+              <img class="animeimg" src="Img/Animes/1.jpg">
+              <p id="p">Naruto Shippuden</p>
+          </div>
+
+          <div class="anime text-center">
+              <img class="animeimg" src="IMG/Animes/2.jpg">
+              <p id="p">Haikyuu! To the Top</p>
+            </div>
+    
+            <div class="anime text-center">
+              <img class="animeimg" src="IMG/Animes/3.jpg">
+              <p id="p">Boku no Hero Academia</p>
+            </div>
+    
+            <div class="anime text-center">
+              <img class="animeimg" src="IMG/Animes/4.jpg">
+              <p id="p">Nanatsu no Taizai</p>
+            </div>
+
+      </div>
+
+      <button type="button" class="btn btn-danger">Ver Mais</button>
+
+  </div>
+
+  <br>
+
+  <div id="comentarios" class="container">
+    <br>
+      <h1 id="h1">Comentários</h1>
+      <br>
+      <div id="coments">
+
+          <div class="media">
+              <img src="Img/User1.png" class="mr-3" id="user">
+              <div class="media-body">
+                  <h5 id="h4">Nome do Usuário</h5>
+                  <p id="p">Um comentário sobre o Anime/Filme</p>
+              </div>
+          </div>
+
+          <div class="media">
+              <img src="Img/User1.png" class="mr-3" id="user">
+              <div class="media-body">
+                  <h5 id="h4">Nome do Usuário</h5>
+                  <p id="p">Um comentário sobre o Anime/Filme</p>
+              </div>
+          </div>
+
+          <div class="media">
+              <img src="Img/User1.png" class="mr-3" id="user">
+              <div class="media-body">
+                  <h5 id="h4">Nome do Usuário</h5>
+                  <p id="p">Um comentário sobre o Anime/Filme</p>
+              </div>
+          </div>
+
+          <div class="media">
+              <img src="Img/User1.png" class="mr-3" id="user">
+              <div class="media-body">
+                  <h5 id="h4">Nome do Usuário</h5>
+                  <p id="p">Um comentário sobre o Anime/Filme</p>
+              </div>
+          </div>
+
+      </div>
+  </div>
+
+
+  <footer>
+    <div>
+      <ul>
+        <li><a class="col-md-3" href="Contato.html">Contato</a></li>
+        <li><a class="col-md-3" href="#">Redes sociais</a></li>
+        <li><a class="col-md-3" href="#">Sobre nós</a></li>
+        <li><a class="col-md-3" href="#">Termos e politica</a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
