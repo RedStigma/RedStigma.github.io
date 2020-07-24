@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/animeUp.css">
+</head>
+<body id="body">
+
+    <header class="container-fluid">
+        <nav class="navbar  navbar-expand-md">
+          <a class="navbar-brand" href="AnimeUP.html">
+            <img src="Img/Logo.png" height="80px">
+          </a>
+          <Button class="navbar-toggler " type="button" data-toggle='collapse' data-target='#navyAnime'
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><img height="10px" src="Img/pontos.png "></span>
+          </Button>
+          <div class="collapse navbar-collapse  " id="navyAnime">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link" href="AnimeUP.html">Home</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="#">lançamentos</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="#">Populares</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="#">Filmes</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="#">Animes</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 ml-auto ">
+              <input class=" form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+              <button class="btn btn-secondary mr-sm-2 mt-sm-0 " type="submit"> <img src="Img/search.png"
+                  height="15px"></button>
+            </form>
+            <div class="user">
+              <img src="Img/User1.png" height="60px">
+              <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal"
+                data-target="#animeModalL">Login</button>
+              <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal"
+                data-target="#animeModalC">cadastro</button>
+            </div>
+            <div class="modal fade" id="animeModalL" tabindex="-1" role="dialog" aria-labelledby="ModCenter"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-center" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ModCenter">Login</h5>
+                    <button type="button" class="close" data-dismiss='modal' aria-label='Fechar'>
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label> Endereço de email</label>
+                        <input class="form-control" placeholder="Seu email" type="email">
+                      </div>
+                      <div class="form-group">
+                        <label> Senha</label>
+                        <input class="form-control" placeholder="Sua senha" type="password">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Confirmar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="modal fade" id="animeModalC" tabindex="-1" role="dialog" aria-labelledby="ModCenter"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-center" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ModCenter">Cadastro</h5>
+                    <button type="button" class="close" data-dismiss='modal' aria-label='Fechar'>
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label> Nome</label>
+                        <input class="form-control" placeholder="Seu Nome" type="text">
+                      </div>
+                      <div class="form-group">
+                        <label> Endereço de email</label>
+                        <input class="form-control" placeholder="Seu email" type="email">
+                      </div>
+                      <div class="form-group">
+                        <label> Senha</label>
+                        <input class="form-control" placeholder="Sua senha" type="password">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Confirmar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </nav>
+    </header>
+    <br>
+
+    <main>
+        <div id="player" class="bg container text-center">
+            <br>
+            <h1 id="h1">Shingeki no Kyojin - 1º Temporada - Episódio 1</h1>
+            <br>
+            <h4 id="h4">Para você a 2 mil anos no futuro - A queda de Shiganshina(1)</h4>
+            <video controls width="80%" class="rounded">
+                <source src="Eps/Shingeki_no_Kyojin_01_Dollars-OF-Anbient.mkv">
+            </video>       
+        </div>
+        <br>
+
+        <div id="btns" class="text-center">
+                <button type="button" class="btnEp btn btn-danger">Episódio Anterior</button>
+                <a href="Shingeki.html"><button type="button" class="btnEp btn btn-danger">Lista de Episódios</button></a>
+                <button type="button" class="btnEp btn btn-danger">Próximo Episódio</button>
+        </div>
+        
+        <div id="relacionados" class="container">
+            <h1 id="h1">Relacionados</h1>
+            <div id="flex-inner">
+    
+                <div class="anime text-center">
+                    <img class="animeimg" src="Img/Animes/1.jpg">
+                    <p id="p">Naruto Shippuden</p>
+                </div>
+    
+                <div class="anime text-center">
+                    <img class="animeimg" src="IMG/Animes/2.jpg">
+                    <p id="p">Haikyuu! To the Top</p>
+                </div>
+        
+                <div class="anime text-center">
+                    <img class="animeimg" src="IMG/Animes/3.jpg">
+                    <p id="p">Boku no Hero Academia</p>
+                </div>
+        
+                <div class="anime text-center">
+                    <img class="animeimg" src="IMG/Animes/4.jpg">
+                    <p id="p">Nanatsu no Taizai</p>
+                </div>
+    
+            </div>
+    
+            <button type="button" class="btn btn-danger">Ver Mais</button>
+    
+        </div>
+        <br>
+
+        <div id="comentarios" class="container">
+            <br>
+            <h1 id="h1">Comentários</h1>
+            <br>
+            <div id="coments">
+        
+                <div class="media">
+                    <img src="Img/User1.png" class="mr-3" id="user">
+                    <div class="media-body">
+                        <h5 id="h4">Nome do Usuário</h5>
+                        <p id="p">Um comentário sobre o Anime/Filme</p>
+                    </div>
+                </div>
+        
+                <div class="media">
+                    <img src="Img/User1.png" class="mr-3" id="user">
+                    <div class="media-body">
+                        <h5 id="h4">Nome do Usuário</h5>
+                        <p id="p">Um comentário sobre o Anime/Filme</p>
+                    </div>
+                </div>
+        
+                <div class="media">
+                    <img src="Img/User1.png" class="mr-3" id="user">
+                    <div class="media-body">
+                        <h5 id="h4">Nome do Usuário</h5>
+                        <p id="p">Um comentário sobre o Anime/Filme</p>
+                    </div>
+                </div>
+        
+                <div class="media">
+                    <img src="Img/User1.png" class="mr-3" id="user">
+                    <div class="media-body">
+                        <h5 id="h4">Nome do Usuário</h5>
+                        <p id="p">Um comentário sobre o Anime/Filme</p>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        <br>
+    </main>
+
+    <footer>
+        <div>
+          <ul>
+            <li><a class="col-md-3" href="#">Contato</a></li>
+            <li><a class="col-md-3" href="#">Redes sociais</a></li>
+            <li><a class="col-md-3" href="#">Sobre nós</a></li>
+            <li><a class="col-md-3" href="#">Termos e politica</a></li>
+          </ul>
+        </div>
+    </footer>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
