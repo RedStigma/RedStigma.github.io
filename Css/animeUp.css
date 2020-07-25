@@ -124,7 +124,7 @@ footer
 
 footer li
 {
-    display: inline;
+    display: inline-block;
 }
 footer a 
 {
