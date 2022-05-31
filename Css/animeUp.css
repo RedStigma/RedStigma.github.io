@@ -202,6 +202,7 @@ footer a:hover
 .animeimg:hover{
     opacity: 70%;
 }
-#dot{ 
-background-color: rgba(70, 70, 70, 160);
+
+.dot{ 
+background-color: rgba(10, 10, 10, 160);
 }
